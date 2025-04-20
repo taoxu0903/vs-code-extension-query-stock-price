@@ -3,6 +3,10 @@
   "displayName": "Stock Price Query",
   "description": "A VS Code extension to integrate with GitHub Copilot agent mode as an additional tool. it's capable of querying realtime stock prices.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taoxu0903/vs-code-extension-query-stock-price.git"
+  },
   "engines": {
     "vscode": "^1.99.0"
   },
