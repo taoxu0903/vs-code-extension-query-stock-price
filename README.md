@@ -20,6 +20,43 @@ The Stock Price Query extension integrates with GitHub Copilot agent mode to pro
 3. Enter the stock symbol (e.g., AAPL, MSFT) when prompted.
 4. View the stock price information in the GitHub Copilot chat window or as a notification.
 
+## Agent Mode Usage
+
+In addition to the sidebar interface, you can use this extension in GitHub Copilot agent mode by following these steps:
+
+1. Open the GitHub Copilot chat window and switch to agent mode
+2. Type `#stock-price-query-tool` directly in the chat followed by the stock symbol (e.g., AAPL, TSLA) as part of your query, and click send.
+4. The stock price information will be displayed in the chat response.
+
+This approach allows seamless integration with GitHub Copilot for a conversational experience.
+
+## Environment Variables
+
+This extension requires an API key to query stock prices. You need to create a `.env` file in the root of the project and specify the `API_KEY` variable as follows:
+
+```
+API_KEY=your_api_key_here
+```
+
+Replace `your_api_key_here` with your actual API key. This key will be used to authenticate requests to the stock price API.
+
+## API Key Requirement
+
+This extension uses the Alpha Vantage API to fetch stock price data. To use this extension, you must obtain an API key from [Alpha Vantage](https://www.alphavantage.co/support/#api-key) and configure it in a `.env` file.
+
+### Steps to Configure the API Key
+1. Sign up at [Alpha Vantage](https://www.alphavantage.co/support/#api-key) to get your free API key.
+2. Create a `.env` file in the root directory of the project.
+3. Add the following line to the `.env` file:
+
+   ```
+   ALPHA_VANTAGE_API_KEY=your_api_key_here
+   ```
+
+   Replace `your_api_key_here` with your actual API key.
+
+This API key is required for the extension to authenticate requests to the Alpha Vantage API and retrieve stock price information.
+
 ## Development
 ### Prerequisites
 - Node.js (v16 or later)
